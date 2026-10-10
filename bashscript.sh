@@ -6,7 +6,7 @@ MERAH='\033[0;31m'
 HIJAU='\033[0;32m'
 NC='\033[0m'
 
-echo "Hallo Calon Saciers!"
+echo Hallo Calon Saciers!"
 
 echo "Siapa nama anda?"
 read name
