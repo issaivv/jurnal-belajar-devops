@@ -7,7 +7,7 @@ HIJAU='\033[0;32m'
 NC='\033[0m'
 
 echo "Hallo Calon Saciers!"
-
+echo ""
 echo "Siapa nama anda?"
 read name
 echo "Berapa umur anda?"
@@ -31,9 +31,21 @@ read confident
 	else
 	  echo "Tetap semangat! Ragu di awal itu wajar, jalani saja dulu."
 	fi
-
+echo ""
+echo "--- Kata Motivasi Hari Ini Untukmu ---"
+echo ""
+	if [ "$major" == "TKJ" ]; then
+	 echo "Jaringan saja diperjuangkan agar selalu Connected, apalagi masa depanmu!"
+	elif [ "$major" == "TPTU" ]; then
+	 echo "Kepala boleh dingin saat menghadapi masalah, tapi semnagat belajarmu harus tetap membara ya!"
+	else
+	 echo "Pepatah mengatakan 'Apapun jurusannya, kunci kesuksesannya adalah konsistensi. Sukses menantimu di masa depan!'"
+	fi
+echo ""
 echo -e "${HIJAU}Goodluck $name!${NC}"
 tanggal=$(date)
-
+echo ""
+echo ""
 echo "Inputan anda pada $tanggal: $name, $age, $major, $interest, $confident"
+
 
