@@ -6,10 +6,12 @@ MERAH='\033[0;31m'
 HIJAU='\033[0;32m'
 NC='\033[0m'
 
-echo Hallo Calon Saciers!"
+echo "Hallo Calon Saciers!"
 
 echo "Siapa nama anda?"
 read name
+echo "Berapa umur anda?"
+read age
 echo "Jurusan apa yang anda pilih? (TITL/TPTU/TKJ/AKL/MPLB)"
 read major
 
@@ -33,5 +35,5 @@ read confident
 echo -e "${HIJAU}Goodluck $name!${NC}"
 tanggal=$(date)
 
-echo "Inputan anda pada $tanggal: $name, $major, $interest, $confident"
+echo "Inputan anda pada $tanggal: $name, $age, $major, $interest, $confident"
 
